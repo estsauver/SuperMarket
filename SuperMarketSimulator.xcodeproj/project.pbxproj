@@ -1,0 +1,236 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F03D14014ED8E2C005016D3 /* Supermarket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F03D13F14ED8E2C005016D3 /* Supermarket.cpp */; };
+		5F0D105014ECED9F00CA9ABE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D104F14ECED9F00CA9ABE /* main.cpp */; };
+		5F0D105214ECED9F00CA9ABE /* SuperMarketSimulator.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5F0D105114ECED9F00CA9ABE /* SuperMarketSimulator.1 */; };
+		5F0D106114ECEFD900CA9ABE /* customer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D106014ECEFD900CA9ABE /* customer.cpp */; };
+		5F78B9B414EDDE8300925076 /* Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F78B9B314EDDE8300925076 /* Queue.cpp */; };
+		5F78B9C214EDE91B00925076 /* comp11io.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F78B9C114EDE91B00925076 /* comp11io.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5F0D104914ECED9F00CA9ABE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				5F0D105214ECED9F00CA9ABE /* SuperMarketSimulator.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5F03D13B14ECF496005016D3 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		5F03D13E14ED8D5D005016D3 /* Supermarket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Supermarket.h; sourceTree = "<group>"; };
+		5F03D13F14ED8E2C005016D3 /* Supermarket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Supermarket.cpp; sourceTree = "<group>"; };
+		5F0D104B14ECED9F00CA9ABE /* SuperMarketSimulator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SuperMarketSimulator; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F0D104F14ECED9F00CA9ABE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5F0D105114ECED9F00CA9ABE /* SuperMarketSimulator.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = SuperMarketSimulator.1; sourceTree = "<group>"; };
+		5F0D105814ECEDB100CA9ABE /* customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customer.h; sourceTree = "<group>"; };
+		5F0D106014ECEFD900CA9ABE /* customer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = customer.cpp; path = ../customer.cpp; sourceTree = "<group>"; };
+		5F65450414EE09AA0094EDD2 /* test.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.data; sourceTree = "<group>"; };
+		5F78B9B314EDDE8300925076 /* Queue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Queue.cpp; sourceTree = "<group>"; };
+		5F78B9C014EDE91B00925076 /* comp11io.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comp11io.h; sourceTree = "<group>"; };
+		5F78B9C114EDE91B00925076 /* comp11io.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = comp11io.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F0D104814ECED9F00CA9ABE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F0D104014ECED9F00CA9ABE = {
+			isa = PBXGroup;
+			children = (
+				5F03D13B14ECF496005016D3 /* Queue.h */,
+				5F78B9B314EDDE8300925076 /* Queue.cpp */,
+				5F65450414EE09AA0094EDD2 /* test.data */,
+				5F78B9C014EDE91B00925076 /* comp11io.h */,
+				5F78B9C114EDE91B00925076 /* comp11io.cpp */,
+				5F03D13E14ED8D5D005016D3 /* Supermarket.h */,
+				5F03D13F14ED8E2C005016D3 /* Supermarket.cpp */,
+				5F0D104E14ECED9F00CA9ABE /* SuperMarketSimulator */,
+				5F0D104C14ECED9F00CA9ABE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F0D104C14ECED9F00CA9ABE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F0D104B14ECED9F00CA9ABE /* SuperMarketSimulator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F0D104E14ECED9F00CA9ABE /* SuperMarketSimulator */ = {
+			isa = PBXGroup;
+			children = (
+				5F0D106014ECEFD900CA9ABE /* customer.cpp */,
+				5F0D104F14ECED9F00CA9ABE /* main.cpp */,
+				5F0D105814ECEDB100CA9ABE /* customer.h */,
+				5F0D105114ECED9F00CA9ABE /* SuperMarketSimulator.1 */,
+			);
+			path = SuperMarketSimulator;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F0D104A14ECED9F00CA9ABE /* SuperMarketSimulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F0D105514ECED9F00CA9ABE /* Build configuration list for PBXNativeTarget "SuperMarketSimulator" */;
+			buildPhases = (
+				5F0D104714ECED9F00CA9ABE /* Sources */,
+				5F0D104814ECED9F00CA9ABE /* Frameworks */,
+				5F0D104914ECED9F00CA9ABE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SuperMarketSimulator;
+			productName = SuperMarketSimulator;
+			productReference = 5F0D104B14ECED9F00CA9ABE /* SuperMarketSimulator */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F0D104214ECED9F00CA9ABE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Tufts University";
+			};
+			buildConfigurationList = 5F0D104514ECED9F00CA9ABE /* Build configuration list for PBXProject "SuperMarketSimulator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5F0D104014ECED9F00CA9ABE;
+			productRefGroup = 5F0D104C14ECED9F00CA9ABE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F0D104A14ECED9F00CA9ABE /* SuperMarketSimulator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F0D104714ECED9F00CA9ABE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F0D105014ECED9F00CA9ABE /* main.cpp in Sources */,
+				5F0D106114ECEFD900CA9ABE /* customer.cpp in Sources */,
+				5F03D14014ED8E2C005016D3 /* Supermarket.cpp in Sources */,
+				5F78B9B414EDDE8300925076 /* Queue.cpp in Sources */,
+				5F78B9C214EDE91B00925076 /* comp11io.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5F0D105314ECED9F00CA9ABE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5F0D105414ECED9F00CA9ABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5F0D105614ECED9F00CA9ABE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5F0D105714ECED9F00CA9ABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F0D104514ECED9F00CA9ABE /* Build configuration list for PBXProject "SuperMarketSimulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F0D105314ECED9F00CA9ABE /* Debug */,
+				5F0D105414ECED9F00CA9ABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F0D105514ECED9F00CA9ABE /* Build configuration list for PBXNativeTarget "SuperMarketSimulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F0D105614ECED9F00CA9ABE /* Debug */,
+				5F0D105714ECED9F00CA9ABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F0D104214ECED9F00CA9ABE /* Project object */;
+}
