@@ -24,28 +24,31 @@ Supermarket::Supermarket(int typeOfStore, string incomingCustomersFileName){
         //BATURAY HELP GOES HERE
         while (incomingCustomers.getPeopleInQueue()>0||register1.getPeopleInQueue()>0){
                 while(incomingCustomers.getPeopleInQueue()>0 && time > (incomingCustomers.getFront()->getArrivalTime())){
-                    register1.add(incomingCustomers.getFront());
-                    incomingCustomers.remove();
+                    customer * tempCustomer = incomingCustomers.remove();
+                    register1.add(tempCustomer);
+                    if (register1.getPeopleInQueue()>0){
+                        if (register1.getFront()->getStartCheckoutTime()==0)  {
+                            register1.getFront()->setStartCheckoutTime(time);
+                        }
+                    }
                 }
             
-            
-            if (register1.getPeopleInQueue()>0){
-                if (register1.getFront()->getStartCheckoutTime()==0)  {
-                    register1.getFront()->setStartCheckoutTime(time);
+                while(register1.getPeopleInQueue()>0&&(time>(register1.getFront()->getStartCheckoutTime()+ register1.getFront()->getItems()))){
+                    if (register1.getPeopleInQueue()>0){
+                        if (register1.getFront()->getStartCheckoutTime()==0)  {
+                            register1.getFront()->setStartCheckoutTime(time);
+                        }
+                        else{
+                            customer * tempCustomer = register1.remove();
+                            outgoingCustomers.add(tempCustomer);
+                        }
+                    }
                 }
-                
-            
-            while((time<(register1.getFront()->getStartCheckoutTime()+ register1.getFront()->getItems()))){
-                outgoingCustomers.add(register1.getFront());
-                register1.remove();
-                }
-            }
             time++;
 
-            }
-            
         }
-        outgoingCustomers.printQueue();
-
+            
     }
-    ;
+    outgoingCustomers.printQueue();
+
+};

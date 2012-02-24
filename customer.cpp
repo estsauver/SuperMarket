@@ -49,4 +49,4 @@ int customer::getStartCheckoutTime(){
 void customer::setStartCheckoutTime(int newStartTime){
     startCheckoutTime = newStartTime;
 }
-    
+

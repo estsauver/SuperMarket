@@ -20,8 +20,8 @@ Queue::Queue() {
 }
 
 void Queue::queueFromFile(string fileName){
-
     vector<customer> temporaryCustomerHolder;
+
     customer * backOfLine = NULL;
     string temporaryName;
     int temporaryArrivalTime;
@@ -37,11 +37,9 @@ void Queue::queueFromFile(string fileName){
             temporaryItems = getInt(inFile);
             temporaryArrivalTime = getInt(inFile);
             //cout << temporaryName << temporaryItems << temporaryArrivalTime <<" "<< numberOfItems<<endl;
-            
-            customer temporaryCustomer = customer(temporaryName, temporaryArrivalTime, temporaryItems);
-            temporaryCustomer.setNext(backOfLine);
-            temporaryCustomerHolder.push_back(temporaryCustomer);
-            numberOfItems++;
+
+            customer * temporaryCustomer = new customer(temporaryName, temporaryArrivalTime, temporaryItems);
+            add(temporaryCustomer);
         }
     else{cout<<"Failure to read";}
     
@@ -50,6 +48,7 @@ void Queue::queueFromFile(string fileName){
         add(&temporaryCustomerHolder.at(i));
         
     };
+    comp11::atEndOfFile(inFile);
 }
 
 int Queue::getPeopleInQueue(){
@@ -63,23 +62,28 @@ customer * Queue::getFront(){
 }
 
 
-void Queue::remove() {
+customer * Queue::remove() {
+    customer * removedCustomer = front;
     if (front==NULL){
-        back = NULL;
+        throw "NotEmpty";
     }
+    
     front = front->getNext();
     numberInQueue--;
-    
+    return removedCustomer;
+
 }
 
 void Queue::add(customer * newCustomer){
     if(isEmpty()){
         front = newCustomer;
-        back = newCustomer;
+        back = front;
+        front->setNext(back);
+    }else{ 
+        back->setNext(newCustomer);
     }
-    back->setNext(newCustomer);
     back = newCustomer;
-    back->setNext(NULL);
+
     
     numberInQueue++;
         
@@ -87,7 +91,7 @@ void Queue::add(customer * newCustomer){
 }
 
 int Queue::isEmpty(){
-    if (front==NULL || back ==NULL )
+    if (front==NULL && back ==NULL )
     {return true;}
     else 
         return false;
@@ -100,8 +104,10 @@ void Queue::printQueue(){
         cout<<"This Queue was empty!";
     }
     while (currentNode != NULL){
-    cout<<currentNode->getName()<<(currentNode->getStartCheckoutTime() - currentNode->getArrivalTime());
-    currentNode = currentNode->getNext();
+        string nameCurrentName = currentNode->getName();
+        int totalWait = (currentNode->getStartCheckoutTime()-currentNode->getArrivalTime());
+        cout<<nameCurrentName<<" "<<totalWait<<endl;
+        currentNode = currentNode->getNext();
     }
     
 

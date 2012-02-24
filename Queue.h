@@ -7,6 +7,7 @@
 //
 #include <iostream>
 #include "customer.h"
+#include <vector>
 #ifndef SuperMarketSimulator_Queue_h
 #define SuperMarketSimulator_Queue_h
 using namespace std;
@@ -15,11 +16,14 @@ class Queue{
     customer * front;
     customer * back;
     int numberInQueue;
+    
 public:
+    //Initializers
     Queue();
     void queueFromFile(string fileName);
 
-    void remove(); //destructive, removes elemnt from queue
+    
+    customer * remove(); //destructive, removes elemnt from queue
     customer * getFront(); //nondestructive
     void add(customer * newCustomer);
     int isEmpty();
