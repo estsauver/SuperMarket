@@ -21,7 +21,14 @@ class Supermarket {
 public:
     Supermarket(int typeOfStore, string incomingCustomersFileName);
     int getTypeOfStore();
+    Queue * shortestRegister(bool express);
     Queue * getOutgoingCustomers();
+    bool allRegistersEmpty();
+    void registerProcess(Queue * registerX);
+
+    
+    
 };
+
 
 #endif

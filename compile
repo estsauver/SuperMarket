@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -Wall -Wextra main.cpp comp11io.cpp Supermarket.cpp customer.cpp Queue.cpp Queue.h comp11io.h Supermarket.h customer.h -o supermarket

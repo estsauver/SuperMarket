@@ -11,16 +11,16 @@
 int main (int argc, const char * argv[])
 {
     int configNumber;
-//    string strFilename;
-//
+    char strFilename[255];
+
     cout << "Enter a configuration number: " <<endl;
+    cin >> strFilename;
+    cout << "Enter a filename: " <<endl;
     cin >> configNumber;
-//    cout << "Enter a filename: " <<endl;
-//    cin >> strFilename;
     
-    string strFilename= "/Users/estsauver/Documents/linear.data";
+    string testString= "/Users/estsauver/Documents/test.data";
     Queue newTestQueue = Queue();
-    newTestQueue.queueFromFile("/Users/estsauver/Documents/linear.data");
+    //newTestQueue.queueFromFile("/Users/estsauver/Documents/test.data");
     Supermarket testMarket = Supermarket(configNumber, strFilename);
     return 0;
     

@@ -35,12 +35,12 @@
 		5F0D104B14ECED9F00CA9ABE /* SuperMarketSimulator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SuperMarketSimulator; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F0D104F14ECED9F00CA9ABE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		5F0D105114ECED9F00CA9ABE /* SuperMarketSimulator.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = SuperMarketSimulator.1; sourceTree = "<group>"; };
-		5F0D105814ECEDB100CA9ABE /* customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customer.h; sourceTree = "<group>"; };
 		5F0D106014ECEFD900CA9ABE /* customer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = customer.cpp; path = ../customer.cpp; sourceTree = "<group>"; };
 		5F65450414EE09AA0094EDD2 /* test.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.data; sourceTree = "<group>"; };
 		5F78B9B314EDDE8300925076 /* Queue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Queue.cpp; sourceTree = "<group>"; };
 		5F78B9C014EDE91B00925076 /* comp11io.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comp11io.h; sourceTree = "<group>"; };
 		5F78B9C114EDE91B00925076 /* comp11io.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = comp11io.cpp; sourceTree = "<group>"; };
+		5FDF722A14F7881B001A573A /* customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				5F0D106014ECEFD900CA9ABE /* customer.cpp */,
+				5FDF722A14F7881B001A573A /* customer.h */,
 				5F0D104F14ECED9F00CA9ABE /* main.cpp */,
-				5F0D105814ECEDB100CA9ABE /* customer.h */,
 				5F0D105114ECED9F00CA9ABE /* SuperMarketSimulator.1 */,
 			);
 			path = SuperMarketSimulator;

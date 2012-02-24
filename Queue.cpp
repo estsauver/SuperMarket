@@ -22,7 +22,6 @@ Queue::Queue() {
 void Queue::queueFromFile(string fileName){
     vector<customer> temporaryCustomerHolder;
 
-    customer * backOfLine = NULL;
     string temporaryName;
     int temporaryArrivalTime;
     int temporaryItems;
@@ -30,7 +29,7 @@ void Queue::queueFromFile(string fileName){
     
     ifstream inFile;
     int successfulOpen = openFileForReading(fileName, inFile);
-    cout<<successfulOpen;
+    //cout<<successfulOpen;
     if (successfulOpen==1)
         while (!atEndOfFile(inFile)) {
             temporaryName = getToken(inFile);
@@ -41,7 +40,9 @@ void Queue::queueFromFile(string fileName){
             customer * temporaryCustomer = new customer(temporaryName, temporaryArrivalTime, temporaryItems);
             add(temporaryCustomer);
         }
-    else{cout<<"Failure to read";}
+    else{
+        cout<<"Failure to read";
+    }
     
     
     for (int i = 0; i<numberOfItems; i++) {
@@ -77,8 +78,7 @@ customer * Queue::remove() {
 void Queue::add(customer * newCustomer){
     if(isEmpty()){
         front = newCustomer;
-        back = front;
-        front->setNext(back);
+        front->setNext(NULL);
     }else{ 
         back->setNext(newCustomer);
     }
@@ -91,7 +91,7 @@ void Queue::add(customer * newCustomer){
 }
 
 int Queue::isEmpty(){
-    if (front==NULL && back ==NULL )
+    if (front==NULL)
     {return true;}
     else 
         return false;
